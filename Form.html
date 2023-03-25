@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<title>Daftar Member</title>
+</head>
+<body>
+  
+	<h1>Form Member</h1>
+	<form>
+		<label for="nama">Nama:</label><br>
+		<input type="text" id="nama" name="nama"><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><br>
+
+		<label for="Gender">Gender:</label><br>
+		<input type="radio" id="laki_laki" name="Gender" value="laki-laki">
+		<label for="laki_laki">Laki-laki</label><br>
+		<input type="radio" id="perempuan" name="Gender" value="perempuan">
+		<label for="perempuan">Perempuan</label><br>
+
+        <label for="Community">Community:</label><br>
+		<input type="checkbox" id="Artistik" name="Community[]" value="Artistik">
+		<label for="Artistik">Artistik</label><br>
+		<input type="checkbox" id="Designer" name="Community[]" value="Designer">
+		<label for="Designer">Designer</label><br>
+		<input type="checkbox" id="Photographer" name="Community[]" value="Photographer">
+		<label for="Photographer">Photographer</label><br>
+
+
+		<input type="button" value="Simpan" onclick="simpanData()">
+	</form>
+    
+</body>
+<script src="Form.js"></script>
+</html>
